@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Conta do Usuário
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Cadastro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <form #form="ngForm">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>Crie a tua conta</h3>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input name="nome" type="text" placeholder="Digite o seu nome" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="email" type="email" placeholder="Digite o seu email" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="senha" type="senha" placeholder="Digite a sua senha" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="confirmar" type="senha" placeholder="Confirme a sua senha" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button size="medium" type="submit">Cadastrar</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+</ion-content>
+
+<ion-footer collapse="fade">
+  <ion-toolbar color="primary">
+    <ion-title id="footer">Desenvolvido pela Denise Mocellin - 2022</ion-title>
+  </ion-toolbar>
+</ion-footer>
